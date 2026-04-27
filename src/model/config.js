@@ -1,3 +1,19 @@
+export const DESIGN_RES = {
+    width: 800,
+    height: 600
+};
+
+export const ASSETS_MANIFEST = [
+    { alias: 'hv1', src: '/assets/hv1_symbol.png' },
+    { alias: 'hv2', src: '/assets/hv2_symbol.png' },
+    { alias: 'hv3', src: '/assets/hv3_symbol.png' },
+    { alias: 'hv4', src: '/assets/hv4_symbol.png' },
+    { alias: 'lv1', src: '/assets/lv1_symbol.png' },
+    { alias: 'lv2', src: '/assets/lv2_symbol.png' },
+    { alias: 'lv3', src: '/assets/lv3_symbol.png' },
+    { alias: 'lv4', src: '/assets/lv4_symbol.png' },
+    { alias: 'spin_button', src: '/assets/spin_button.png' },
+];
 
 export const REEL_BANDS = [
     ["hv2", "lv3", "lv3", "hv1", "hv1", "lv1", "hv1", "hv4", "lv1", "hv3", "hv2", "hv3", "lv4", "hv4", "lv1", "hv2", "lv4", "lv1", "lv3", "hv2"],
