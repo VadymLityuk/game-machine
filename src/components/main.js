@@ -1,4 +1,4 @@
-import './assets/styles/main.css';
+import '../assets/styles/main.css';
 import * as PIXI from 'pixi.js';
 
 const app = new PIXI.Application({
