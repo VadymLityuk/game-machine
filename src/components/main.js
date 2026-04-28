@@ -31,7 +31,7 @@ loadingText.y = DESIGN_RES.height / 2;
 app.stage.addChild(loadingText);
 
 async function setup() {
-    ASSETS_MANIFEST.forEach(asset => PIXI.Assets.add(asset)); // Используем манифест из конфига
+    ASSETS_MANIFEST.forEach(asset => PIXI.Assets.add(asset)); 
     
     try {
         await PIXI.Assets.load(ASSETS_MANIFEST.map(a => a.alias), (p) => {
