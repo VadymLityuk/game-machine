@@ -1,0 +1,36 @@
+# Slot Machine Engine
+
+A modular, responsive slot machine simulator built with **PixiJS v7** and **Vite**
+
+## Key Highlights
+
+- **Decoupled Math Engine**: The win calculation logic is entirely independent of the rendering engine, allowing for easy testing, maintenance, and portability.
+- **Responsive Layout**: Implements a "Design Resolution" strategy with dynamic scaling and centering to ensure the game fits any viewport size without distortion.
+- **Robustness**: The math core is covered with Unit Tests using **Vitest** to ensure payline logic strictly matches the project specifications
+
+## Project Structure
+
+src/
+├── components/     # visual components (SlotGame, Reel)
+├── model/          # Pure business logic and math engine
+├── assets/         # Global styles and static resource definitions
+├── config.js       # Centralized game parameters & asset manifest
+└── main.js         # App entry point, bootstrap, and resize management
+
+## Installation
+npm install
+
+## Development
+npm run dev
+
+## Running Tests
+
+To verify the math engine and payline calculations:
+
+npm run test
+
+## Technical Decisions
+
+PixiJS v7 Assets: Utilized the assets package for efficient asynchronous management and preloading of textures with a custom progress-tracking UI.
+
+Scalability: The Reel component is built to be data-driven; changing the grid size or adding new symbols requires zero changes to the core rendering logic.
